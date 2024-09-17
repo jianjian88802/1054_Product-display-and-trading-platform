@@ -300,15 +300,6 @@
 				}
 			})
 
-			// 初始化地图插件
-			jquery(document).ready(function() {
-				var p = jquery("#address").AMapPositionPicker();
-				jquery("#address").on('click', function() {
-					var position = p.AMapPositionPicker('position');
-					jquery('#address').val(position.address)
-				});
-			});
-
 			layui.use(['layer', 'element', 'carousel', 'http', 'jquery', 'form', 'laypage'], function() {
 				var layer = layui.layer;
 				var element = layui.element;
